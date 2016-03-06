@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace UTN.Web.Models
+﻿namespace UTN.Web.Models
 {
     public class StudentViewModel
     {
+        public int Code { set; get; }
+        public int CountryId { set; get; }
     }
 }

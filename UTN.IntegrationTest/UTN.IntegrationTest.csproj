@@ -43,8 +43,16 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FakeHost, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FakeHost.1.0.0.1\lib\net45\FakeHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="XHTMLr, Version=1.0.5.660, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FakeHost.1.0.0.1\lib\net45\XHTMLr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -69,9 +77,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\UTN.Data\UTN.Data.csproj">
+      <Project>{bf0d576f-d64d-4180-bc8f-fc74ba1b3ca7}</Project>
+      <Name>UTN.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UTN.Models\UTN.Models.csproj">
       <Project>{e5508594-156f-4bd1-a369-5e4b1b4126d8}</Project>
       <Name>UTN.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UTN.Service\UTN.Service.csproj">
+      <Project>{98b45222-9a4a-42f3-815b-79f91183e2d3}</Project>
+      <Name>UTN.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\UTN.Web\UTN.Web.csproj">
       <Project>{205e8d0b-6f18-4d90-86a8-5e333e6a6bca}</Project>
